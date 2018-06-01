@@ -1,0 +1,46 @@
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+  color:rgb(87,186,109);
+}
+
+.clean-block .block-heading h1, .clean-block .block-heading h2, .clean-block .block-heading h3 {
+  color:rgb(58,174,85);
+}
+
+div {
+  color:rgb(87,186,109);
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.h1, h1 {
+  margin-left:auto;
+  margin-right:auto;
+  padding:80px;
+  padding-bottom:0px;
+}
+
+.clean-block.clean-form form {
+  border-top:2px solid rgb(87,186,109);
+}
+
+.btn-primary {
+  color:#fff;
+  background-color:#57ba6d;
+  border-color:#57ba6d;
+}
+
+.btn-primary:hover {
+  color:#fff;
+  background-color:#61d27a;
+  border-color:#61d27a;
+}
+
+p {
+}
+
+p {
+}
+
+p {
+}
+
