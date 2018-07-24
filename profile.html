@@ -6,47 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Aiming to enable you to pursue your fitness goals whilst providing you with necessary tools to achieve them">
     <title>SEG3125project</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css?h=6225d284f051fc381bc076eafcbb6609">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
-    <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
-    <link rel="stylesheet" href="assets/css/Table-with-search-1.css">
-    <link rel="stylesheet" href="assets/css/ebs-bootstrap-datepicker-2.css">
-    <link rel="stylesheet" href="assets/css/ebs-bootstrap-datepicker-3.css">
-    <link rel="stylesheet" href="assets/css/ebs-bootstrap-datepicker-4.css">
-    <link rel="stylesheet" href="assets/css/ebs-bootstrap-datepicker-1.css">
-    <link rel="stylesheet" href="assets/css/MUSA_panel-table-1.css">
-    <link rel="stylesheet" href="assets/css/MUSA_panel-table.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/Table-with-search.css">
-    <link rel="stylesheet" href="assets/css/ebs-bootstrap-datepicker.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css?h=f4360c53efd8a3358dfd36e632f191d6">
 </head>
 
 <body>
     <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
-        <div class="container"><a class="navbar-brand logo" href="index.html" style="background-repeat:no-repeat;"><img src="assets/img/logo.png" style="width:40px;background-color:white;">&nbsp;&nbsp;fitTrack</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-2"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container"><a class="navbar-brand logo" href="index.html" style="background-repeat:no-repeat;"><img src="assets/img/logo.png?h=5b1ba5fdd420e0867f8045ba2945314b" style="width:40px;background-color:white;">&nbsp;&nbsp;fitTrack</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-2"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div
                 class="collapse navbar-collapse" id="navcol-2">
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item" role="presentation"><a class="nav-link" href="diary.html">Diary</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="chart.html">Reports</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link active" href="profile.html">Profile</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link">Settings</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="login.html">Logout</a></li>
                 </ul>
         </div>
         </div>
     </nav>
-    <main class="page registration-page">
-        <section class="clean-block clean-form dark">
-            <div class="container">
-                <div class="block-heading">
-                    <h1>My Profile</h1>
-                    <p>The personalized profile will appear here.</p><img src="assets/img/logo.png"></div>
+    <main class="page registration-page"></main><div class="container profile profile-view" id="profile">
+    <div class="row">
+        <div class="col-md-12 alert-col relative">
+            <div class="alert alert-info absolue center" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button><span>Profile save with success</span></div>
+        </div>
+    </div>
+    <form>
+        <div class="form-row profile-row">
+            <div class="col-md-4 relative">
+                <div class="avatar">
+                    <div class="avatar-bg center"></div>
+                </div><input type="file" class="form-control" name="avatar-file" /></div>
+            <div class="col-md-8">
+                <h1>Your Profile</h1>
+                <hr />
+                <div class="form-row">
+                    <div class="col-sm-12 col-md-6">
+						<div class="form-group"><label>Firstname <a href="#" style="font-size: 12px"> edit</a></label><input type="text" disabled placeholder="John" class="form-control" name="firstname" /></div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="form-group"><label>Lastname <a href="#" style="font-size: 12px"> edit</a></label><input class="form-control"  disabled placeholder="Doe" type="text" name="lastname" /></div>
+                    </div>
+                </div>
+                <div class="form-group"><label>Email <a href="#" style="font-size: 12px"> edit</a></label><input class="form-control"  disabled placeholder="jdoe123@uottawa.ca" type="email" autocomplete="off" required name="email" /></div>
+                <div class="form-row">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="form-group"><label>Age <a href="#" style="font-size: 12px"> edit</a></label><input class="form-control" type="number"  disabled  placeholder="21" name="password" autocomplete="off" required /></div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="form-group"><label>Password <a href="#" style="font-size: 12px"> edit</a></label><input class="form-control" disabled  placeholder="********" type="password" name="confirmpass" autocomplete="off" required /></div>
+                    </div>
+                </div>
+                <hr />
+                <div class="form-row">
+                    
+                </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </form>
+</div>
     <footer class="page-footer dark" style="padding:-100px;">
         <div class="container">
             <div class="row">
@@ -83,17 +103,9 @@
             <p>© 2018 Fiona Macdonald &amp; Mohammed Abu-Zeinah&nbsp;</p>
         </div>
     </footer>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/ebs-bootstrap-datepicker-1.js"></script>
-    <script src="assets/js/ebs-bootstrap-datepicker.js"></script>
-    <script src="assets/js/exercises.js"></script>
-    <script src="assets/js/foods.js"></script>
-    <script src="assets/js/highcharts.js"></script>
-    <script src="assets/js/js.js"></script>
-    <script src="assets/js/Table-with-search.js"></script>
-    <script src="assets/js/theme.js"></script>
-    <script src="assets/js/users.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.min.js?h=f7616ce55aaa757f3871d649f139b035"></script>
 </body>
 
 </html>

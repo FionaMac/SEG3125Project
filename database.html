@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Aiming to enable you to pursue your fitness goals whilst providing you with necessary tools to achieve them">
-    <title>Register - FitnessPal</title>
+    <title>SEG3125project</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css?h=6225d284f051fc381bc076eafcbb6609">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,42 +15,67 @@
 
 <body>
     <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
-        <div class="container"><a class="navbar-brand logo" href="index.html" style="background-repeat:no-repeat;"><img src="assets/img/logo.png?h=5b1ba5fdd420e0867f8045ba2945314b" style="width:40px;">&nbsp; fitTrack</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container"><a class="navbar-brand logo" href="index.html" style="background-repeat:no-repeat;"><img src="assets/img/logo.png?h=5b1ba5fdd420e0867f8045ba2945314b" style="width:40px;background-color:white;">&nbsp;&nbsp;fitTrack</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-2"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div
-                class="collapse navbar-collapse" id="navcol-1">
+                class="collapse navbar-collapse" id="navcol-2">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="index.html#features">Features</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="index.html#faq">FAQ</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="index.html#about-us">ABout Us</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="login.html">Log In</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="signup.html">Sign UP</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="diary.html">Diary</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="chart.html">Reports</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="profile.html">Profile</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="login.html">Logout</a></li>
                 </ul>
         </div>
         </div>
     </nav>
     <main class="page registration-page">
-        <section class="clean-block clean-form dark">
-            <div class="container">
-                <div class="block-heading">
-                    <h2 class="text-info">Create your free account- Step 1 of 2</h2>
-                    <p class="lead">Your account information</p>
-                </div><form action= "createAccount.html" method="post">
-    <div class="form-group">
-		<label for="name">Username</label>
-		<input type="text" required maxlength="30" minlength="8" class="form-control item" id="name" />
-	</div>
-    <div class="form-group">
-		<label for="email">Email</label>
-		<input type="email" required class="form-control item" id="email" />
-	</div>
-    <div class="form-group">
-		<label for="password">Password</label>
-		<input type="password" required class="form-control item" minlength="8" id="password" />
-	</div>
-	<button class="btn btn-primary btn-block">Continue &gt;&gt;</button>
-</form>
+        <section style="background-color:#f6f6f6;">
+            <h1 style="background-color:#f6f6f6;"></h1><div id="quickAdd" style=" position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+						  cursor: pointer; /* Add a pointer on hover */">
+
+<div class="card" style="margin-top:300px; width:420px;">
+    <div class="card-body">
+		<div style="text-align: right; margin-right: -35px;"><button class="btn btn-primary fa fa-close" style="padding: 5px" onClick="closeOverlay()"></button></div>
+		
+		<div style="font-size: 1.8em;"> <b>Quick add calories</b></div>
+       	<div style="text-align: center; color: black;"> Enter calories to add:</div>
+
+<div class="input-group mb-3">
+  <input type="text" class="form-control"aria-label="calories" aria-describedby="basic-addon2">
+  <div class="input-group-append">
+    <span class="input-group-text" id="basic-addon2">cal</span>
+  </div>
+</div>
+		<div style="text-align: center;">
+		<button class="btn btn-primary " onClick="closeOverlay()">Add</button>
+			</div>
+    </div>
+</div>
 
 </div>
+
+
+<script>
+	function closeOverlay(){
+		    document.getElementById("quickAdd").style.display = "none";
+   }
+</script></section>
+        <section style="background-color:#f6f6f6;">
+            <div class="container"><h2>Search the database</h2>
+
+<form method="post">
+	<label for="food">Food</label>
+	<input type="text" id="food" name="food">
+	<input type="submit" name="submit" value="View Results">
+</form></div>
         </section>
     </main>
     <footer class="page-footer dark" style="padding:-100px;">
